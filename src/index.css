@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    @apply bg-gray-100 
+
+}
+
+
+
+
+
+.text-pr {
+    @apply  text-green-600
+}
+.text-sec {
+    @apply text-gray-300 
+}
+.text-three {
+    @apply text-black opacity-70
+}
+.bg-pr{
+    @apply bg-green-700
+}
+.fl  {
+    @apply  flex items-center gap-4
+}
+
+.btn-pr {
+    @apply bg-green-500 text-white hover:bg-black capitalize  min-w-[280px] 
+}
+
+/* navbar section */
+
+.list li {
+    @apply fl
+}
+.list li:nth-child(2) {
+    @apply  border-x-[1px] border-x-white px-4 md:border-x-black
+}
+.list li h3 {
+    @apply  hidden sm:block sm:text-black
+}
+
+/* navbar section */
+
+/* contact section */
+.icon {
+    @apply text-pr p-[15px] bg-green-100 rounded-md shadow-sm 
+}
+.contact-p {
+    @apply text-gray-500 text-sm md:text-[0.7rem]
+}
+.contact-form input {
+    @apply bg-transparent  outline-none  py-4 px-8  text-gray-400 text-sm  border-b-[1px] border-gray-400  capitalize hover:border-green-500 md:py-8
+}
+/* contact section */
+.inf-article:hover .inf-icon {
+    @apply  text-green-600  duration-300 transition
+}
+.caterogry-article:hover   .category-text {
+    @apply  bg-black 
+}
+
+.hero {
+    height: 120vh;
+}
+.menu {
+    height: 100vh;
+}
+
+.img-container {
+
+    background-image: linear-gradient( rgb(130, 130, 130) 2% , rgb(252, 250, 250));
+}
+.img-container:hover  .cart  {
+    display: block;
+    transition: all 0.5s;
+
+}
